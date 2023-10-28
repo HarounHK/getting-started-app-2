@@ -4,7 +4,7 @@ services:
     image: node:18-alpine
     command: sh -c "yarn install && yarn run readonly"
     ports:
-      - "3000:3000"  # Map the port 3000 of the container to your host machine
+      - "3000:3000"  
     working_dir: /app
     volumes:
       - ./:/app
